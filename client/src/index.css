@@ -1,0 +1,30 @@
+@import "tailwindcss";
+
+/* Base color scheme: white/blue */
+:root {
+  color-scheme: light;
+}
+
+body {
+  @apply bg-white text-gray-800 antialiased;
+}
+
+/* Optional: custom utility class for horizontal padding on containers */
+.container-px {
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+
+@media (min-width: 640px) {
+  .container-px {
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+  }
+}
+
+@media (min-width: 1024px) {
+  .container-px {
+    padding-left: 2rem;
+    padding-right: 2rem;
+  }
+}
